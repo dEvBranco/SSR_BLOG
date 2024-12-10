@@ -1,6 +1,8 @@
 ---
 import { Image } from "astro:assets";
 import logo from "../images/logo.png";
+
+const { title = "Articles, Stories & Tutorials for Tech People" } = Astro.props;
 ---
 
 <!doctype html>
@@ -13,7 +15,7 @@ import logo from "../images/logo.png";
       integrity="sha512-BJ/5sR2hFxQTKin/55JQCcMTObShDBAmVjL/3NR/MVcrhyOazJjAgvROem03+HYyGw16SVdSfoWCFGr9syxAKA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"></script>
-    <title>Tech People Blog</title>
+    <title>{title}</title>
   </head>
   <body class="">
     <nav class="bg-gray-900 text-white">
@@ -57,7 +59,7 @@ import logo from "../images/logo.png";
         </button>
         <div class="hidden w-full md:block md:w-auto" id="navbar-default">
           <ul
-            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 text-white rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 border-gray-700"
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-00 text-white rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 border-gray-700"
           >
             <li>
               <a
