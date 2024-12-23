@@ -1,5 +1,5 @@
 ---
-import { formateDate } from "../utils";
+import { formatDate } from "../utils";
 import type { CollectionEntry } from "astro:content";
 
 const { article } = Astro.props;
@@ -24,7 +24,7 @@ interface Props {
         <h2 class="text-2xl font-semibold sm:text-3xl">
           {article.data.title}
         </h2>
-        <p class="text-xl mt-4">{formateDate(article.data.pubDate)}</p>
+        <p class="text-xl mt-4">{formatDate(article.data.pubDate)}</p>
 
         <!-- Tags with rounded border -->
         <div class="flex mt-4 justify-center">
